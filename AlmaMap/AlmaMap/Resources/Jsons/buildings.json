@@ -1,0 +1,12 @@
+[
+  {
+    "id" : 4,
+    "code": "Ue4",
+    "name": "Edificio 4"
+  },
+  {
+    "id" : 5,
+    "code": "Ue5",
+    "name": "Edificio 5"
+  }
+]

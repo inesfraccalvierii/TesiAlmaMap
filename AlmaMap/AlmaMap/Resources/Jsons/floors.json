@@ -1,0 +1,92 @@
+[
+  {
+    "id" : 7,
+    "number": 0,
+    "svg": "/Resources/res/Ue4_0.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 8,
+    "number": 1,
+    "svg": "/Resources/res/Ue4_1.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 9,
+    "number": 2,
+    "svg": "/Resources/res/Ue4_2.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 10,
+    "number": 3,
+    "svg": "/Resources/res/Ue4_3.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 11,
+    "number": 4,
+    "svg": "/Resources/res/Ue4_4.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 12,
+    "number": 5,
+    "svg": "/Resources/res/Ue4_5.svg",
+    "buildingId": 4
+  },
+  {
+    "id" : 13,
+    "number": -1,
+    "svg": "/Resources/res/Ue5_-1.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 14,
+    "number": 0,
+    "svg": "/Resources/res/Ue5_0.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 15,
+    "number": 1,
+    "svg": "/Resources/res/Ue5_1.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 16,
+    "number": 2,
+    "svg": "/Resources/res/Ue5_2.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 17,
+    "number": 3,
+    "svg": "/Resources/res/Ue5_3.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 18,
+    "number": 4,
+    "svg": "/Resources/res/Ue5_4.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 19,
+    "number": 5,
+    "svg": "/Resources/res/Ue5_5.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 20,
+    "number": 6,
+    "svg": "/Resources/res/Ue5_6.svg",
+    "buildingId": 5
+  },
+  {
+    "id" : 21,
+    "number": 7,
+    "svg": "/Resources/res/Ue5_7.svg",
+    "buildingId": 5
+  }
+]

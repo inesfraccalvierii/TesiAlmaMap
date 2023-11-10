@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "code": "classrooms",
+    "name": "Aule",
+    "nameEng": "Classrooms"
+  },
+  {
+    "id": 2,
+    "code": "labs",
+    "name": "Laboratori",
+    "nameEng": "Laboratories"
+  },
+  {
+    "id": 3,
+    "code": "studies",
+    "name": "Studi",
+    "nameEng": "Studies"
+  },
+  
+  {
+    "id": 4,
+    "code": "services",
+    "name": "Servizi",
+    "nameEng": "Services"
+  },
+  {
+    "id": 5,
+    "code": "toilette",
+    "name": "Bagni",
+    "nameEng": "Toilette"
+  },
+  {
+    "id": 6,
+    "code": "stairs",
+    "name": "Scale",
+    "nameEng": "Stairs"
+  },
+  {
+    "id": 7,
+    "code": "elevators",
+    "name": "Ascensori",
+    "nameEng": "Elevators"
+  },
+  {
+    "id": 8,
+    "code": "exits",
+    "name": "Uscite",
+    "nameEng": "Exits"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  { "id": 1, "code": "graphite_temperature", "typeCode": "TEMPERATURE", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 0 },
+  { "id": 2, "code": "graphite_humidity", "typeCode": "HUMIDITY", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 1 },
+  { "id": 3, "code": "graphite_sound", "typeCode": "SOUND", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 2 },
+  { "id": 4, "code": "graphite_pm2.5", "typeCode": "PM2.5", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 3 },
+  { "id": 5, "code": "graphite_pm10", "typeCode": "PM10", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 4 },
+  { "id": 6, "code": "graphite_nitrogen_dioxide", "typeCode": "NITROGEN_DIOXIDE", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 5 },
+  { "id": 7, "code": "graphite_ozone", "typeCode": "OZONE", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 6 },
+  { "id": 8, "code": "graphite_carbon_monoxide", "typeCode": "CARBON_MONOXIDE", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 7 },
+  { "id": 9, "code": "graphite_comfort", "typeCode": "COMFORT", "spaceId": 102, "systemId": 0, "viewId": 0, "objectId": 8 },
+  { "id": 10, "code": "ciamician_temperature", "typeCode": "TEMPERATURE", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 9 },
+  { "id": 11, "code": "ciamician_humidity", "typeCode": "HUMIDITY", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 10 },
+  { "id": 12, "code": "ciamician_sound", "typeCode": "SOUND", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 11 },
+  { "id": 13, "code": "ciamician_pm2.5", "typeCode": "PM2.5", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 12 },
+  { "id": 14, "code": "ciamician_pm10", "typeCode": "PM10", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 13 },
+  { "id": 15, "code": "ciamician_nitrogen_dioxide", "typeCode": "NITROGEN_DIOXIDE", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 14 },
+  { "id": 16, "code": "ciamician_ozone", "typeCode": "OZONE", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 15 },
+  { "id": 17, "code": "ciamician_carbon_monoxide", "typeCode": "CARBON_MONOXIDE", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 16 },
+  { "id": 18, "code": "ciamician_comfort", "typeCode": "COMFORT", "spaceId": 175, "systemId": 0, "viewId": 0, "objectId": 17 }
+]

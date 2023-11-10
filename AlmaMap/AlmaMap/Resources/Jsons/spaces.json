@@ -1,0 +1,917 @@
+[
+  {
+    "id":4,
+    "code": "Ue5_-1_Scala01",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 6
+  },
+  {
+    "id":5,
+    "code": "Ue5_-1_Ascensore03",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 7
+  },
+  {
+    "id":6,
+    "code": "Ue5_-1_Ascensore02",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 7
+  },
+  {
+    "id":7,
+    "code": "Ue5_-1_Ascensore01",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 7
+  },
+  {
+    "id":8,
+    "code": "Ue5_-1_Ascensore04",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 7
+  },
+  {
+    "id":9,
+    "code": "Ue5_-1_Scala02",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 13,
+    "legendId": 6
+  },
+  {
+    "id":14,
+    "code": "Ue5_0_BagnoHandicap01",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 4
+  },
+  {
+    "id":15,
+    "code": "Ue5_0_Scala03",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 6
+  },
+  {
+    "id":17,
+    "code": "Ue5_0_Bagno04",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 4
+  },
+  {
+    "id":18,
+    "code": "Ue5_0_Ascensore05",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 7
+  },
+  {
+    "id":19,
+    "code": "Ue5_0_Bagno03",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 4
+  },
+  {
+    "id":33,
+    "code": "Ue5_0_Portineria",
+    "name": "Portineria",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 5
+  },
+  {
+    "id":35,
+    "code": "Ue5_0_Scala02",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 6
+  },
+  {
+    "id":36,
+    "code": "Ue5_0_Scala04",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 6
+  },
+  {
+    "id":41,
+    "code": "Ue5_0_Ascensore04",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 7
+  },
+  {
+    "id":43,
+    "code": "Ue5_0_Bagno02",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 4
+  },
+  {
+    "id":44,
+    "code": "Ue5_0_Scala01",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 6
+  },
+  {
+    "id":45,
+    "code": "Ue5_0_Ascensore03",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 7
+  },
+  {
+    "id":46,
+    "code": "Ue5_0_Ascensore02",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 7
+  },
+  {
+    "id":47,
+    "code": "Ue5_0_Ascensore01",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 7
+  },
+  {
+    "id":48,
+    "code": "Ue5_0_Bagno01",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 4
+  },
+  {
+    "id":49,
+    "code": "Ue5_0_Kiosk",
+    "name": "Kiosk",
+    "descriptions": "",
+    "floorId": 14,
+    "legendId": 9
+  },
+  {
+    "id":53,
+    "code": "Ue5_1_Bagno04",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":54,
+    "code": "Ue5_1_Scala04",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 6
+  },
+  {
+    "id":56,
+    "code": "Ue5_1_Bagno03",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":57,
+    "code": "Ue5_1_Ascensore04",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 7
+  },
+  {
+    "id":58,
+    "code": "Ue5_1_BagnoHandicap02",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":70,
+    "code": "Ue5_1_Scala01",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 6
+  },
+  {
+    "id":71,
+    "code": "Ue5_1_Bagno02",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":72,
+    "code": "Ue5_1_Bagno01",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":73,
+    "code": "Ue5_1_Ascensore03",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 7
+  },
+  {
+    "id":74,
+    "code": "Ue5_1_Ascensore02",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 7
+  },
+  {
+    "id":75,
+    "code": "Ue5_1_Ascensore01",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 7
+  },
+  {
+    "id":76,
+    "code": "Ue5_1_BagnoHandicap01",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 4
+  },
+  {
+    "id":77,
+    "code": "Ue5_1_Scala03",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 6
+  },
+  {
+    "id":83,
+    "code": "Ue5_1_Ascensore05",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 15,
+    "legendId": 7
+  },
+  {
+    "id":88,
+    "code": "Ue5_2_Bagno03",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":89,
+    "code": "Ue5_2_BagnoHandicap02",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":90,
+    "code": "Ue5_2_Scala02",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 6
+  },
+  {
+    "id":92,
+    "code": "Ue5_2_Scala04",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 6
+  },
+  {
+    "id":93,
+    "code": "Ue5_2_Scala03",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 6
+  } ,
+  {
+    "id":100,
+    "code": "Ue5_2_Ascensore04",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 7
+  },
+  {
+    "id":101,
+    "code": "Ue5_2_Bagno04",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":102,
+    "code": "Graphite",
+    "name": "Laboratorio Graphite",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 2
+  },
+  {
+    "id":103,
+    "code": "Ue5_2_Scala01",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 6
+  },
+  {
+    "id":104,
+    "code": "Ue5_2_Bagno01",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":105,
+    "code": "Ue5_2_Bagno02",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":106,
+    "code": "Ue5_2_Ascensore03",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 7
+  },
+  {
+    "id":107,
+    "code": "Ue5_2_Ascensore02",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 7
+  },
+  {
+    "id":108,
+    "code": "Ue5_2_Ascensore01",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 7
+  },
+  {
+    "id":109,
+    "code": "Ue5_2_BagnoHandicap01",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 16,
+    "legendId": 4
+  },
+  {
+    "id":111,
+    "code": "Nanotube",
+    "name": "Laboratorio Nanotube",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 2
+  },
+  {
+    "id":113,
+    "code": "Ue5_3_Scala02",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 6
+  },
+  {
+    "id":114,
+    "code": "Ue5_3_Scala03",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 6
+  },
+  {
+    "id":115,
+    "code": "Ue5_3_Scala01",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 6
+  },
+  {
+    "id":116,
+    "code": "Ue5_3_Bagno01",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 4
+  },
+  {
+    "id":117,
+    "code": "Ue5_3_Bagno02",
+    "name": "Bagno",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 4
+  },
+  {
+    "id":118,
+    "code": "Ue5_3_Ascensore03",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 7
+  },
+  {
+    "id":119,
+    "code": "Ue5_3_Ascensore02",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 7
+  },
+  {
+    "id":120,
+    "code": "Ue5_3_Ascensore01",
+    "name": "Ascensore",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 7
+  },
+  {
+    "id":121,
+    "code": "Ue5_3_BagnoHandicap01",
+    "name": "Bagno Disabili",
+    "descriptions": "",
+    "floorId": 17,
+    "legendId": 4
+  },
+  {
+    "id":123,
+    "code": "Ue5_4_Scala02",
+    "name": "Scala",
+    "descriptions": "",
+    "floorId": 18,
+    "legendId": 6
+  },
+  {
+    "id":126,
+    "code": "Diamond",
+    "name": "Laboratorio Diamond",
+    "descriptions": "",
+    "floorId": 18,
+    "legendId": 2
+    },
+    {
+      "id":128,
+      "code": "Ue5_4_Scala01",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 6
+    },
+    {
+      "id":129,
+      "code": "Ue5_4_Bagno02",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 4
+    },
+    {
+      "id":130,
+      "code": "Ue5_4_Bagno01",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 4
+    },
+    {
+      "id":131,
+      "code": "Ue5_4_Ascensore03",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 7
+    },
+    {
+      "id":132,
+      "code": "Ue5_4_Ascensore02",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 7
+    },
+    {
+      "id":133,
+      "code": "Ue5_4_Ascensore01",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 7
+    },
+    {
+      "id":134,
+      "code": "Ue5_4_BagnoHandicap01",
+      "name": "Bagno Disabili",
+      "descriptions": "",
+      "floorId": 18,
+      "legendId": 4
+    },
+    {
+      "id":135,
+      "code": "Ue5_5_Scala02",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 6
+    },
+    {
+      "id":138,
+      "code": "Fullerene",
+      "name": "Laboratorio Fullerene",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 2
+    },
+    {
+      "id":140,
+      "code": "Ue5_5_Scala01",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 6
+    },
+    {
+      "id":141,
+      "code": "Ue5_5_Bagno02",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 4
+    },
+    {
+      "id":142,
+      "code": "Ue5_5_Bagno01",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 4
+    },
+    {
+      "id":143,
+      "code": "Ue5_5_Ascensore03",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 7
+    },
+    {
+      "id":144,
+      "code": "Ue5_5_Ascensore02",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 7
+    },
+    {
+      "id":145,
+      "code": "Ue5_5_Ascensore01",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 7
+    },
+    {
+      "id":146,
+      "code": "Ue5_5_BagnoHandicap01",
+      "name": "Bagno Disabili",
+      "descriptions": "",
+      "floorId": 19,
+      "legendId": 4
+    },
+    {
+      "id":147,
+      "code": "Ue5_6_Scala02",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 6
+    },
+    {
+      "id":150,
+      "code": "Graphene",
+      "name": "Laboratorio Graphene",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 2
+    },
+    {
+      "id":152,
+      "code": "Ue5_6_Scala01",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 6
+    },
+    {
+      "id":153,
+      "code": "Ue5_6_Bagno02",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 4
+    },
+    {
+      "id":154,
+      "code": "Ue5_6_Bagno01",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 4
+    },
+    {
+      "id":155,
+      "code": "Ue5_6_Ascensore03",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 7
+    },
+    {
+      "id":156,
+      "code": "Ue5_6_Ascensore02",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 7
+    },
+    {
+      "id":157,
+      "code": "Ue5_6_Ascensore01",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 7
+    },
+    {
+      "id":158,
+      "code": "Ue5_6_BagnoHandicap01",
+      "name": "Bagno Disabili",
+      "descriptions": "",
+      "floorId": 20,
+      "legendId": 4
+    },
+    {
+      "id":161,
+      "code": "Ue5_7_Scala01",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 6
+    },
+    {
+      "id":162,
+      "code": "Ue5_7_Bagno01",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 4
+    },
+    {
+      "id":163,
+      "code": "Ue5_7_Bagno02",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 4
+    },
+    {
+      "id":164,
+      "code": "Ue5_7_Ascensore03",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 7
+    },
+    {
+      "id":165,
+      "code": "Ue5_7_Ascensore02",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 7
+    },
+    {
+      "id":166,
+      "code": "Ue5_7_Ascensore01",
+      "name": "Ascensore",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 7
+    },
+    {
+      "id":167,
+      "code": "Ue5_7_BagnoHandicap01",
+      "name": "Bagno Disabili",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 4
+    },
+    {
+      "id":168,
+      "code": "Carbon",
+      "name": "Laboratorio Carbon",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 2
+    },
+    {
+      "id":169,
+      "code": "Ue5_7_Scala02",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 6
+    },
+    {
+      "id":170,
+      "code": "Ue5_7_Scala03",
+      "name": "Scala",
+      "descriptions": "",
+      "floorId": 21,
+      "legendId": 6
+    },
+    {
+      "id":171,
+      "code": "Ue5_0_Bagno05",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 14,
+      "legendId": 4
+    },
+    {
+      "id":172,
+      "code": "Ue5_0_Bagno06",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 14,
+      "legendId": 4
+    },
+    {
+      "id":173,
+      "code": "Ue4_0_AulaP",
+      "name": "Aula P",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 1
+    },
+    {
+      "id":174,
+      "code": "Ue4_0_L.TosoMontanari",
+      "name": "Aula L. Toso Montanari",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 1
+    },
+    {
+      "id":175,
+      "code": "Ue4_0_G.Ciamician",
+      "name": "Aula G. Ciamician",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 1
+    },
+    {
+      "id":176,
+      "code": "Ue4_0_SalaRiunioni1",
+      "name": "Sala Riunioni 1",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 5
+    },
+    {
+      "id":177,
+      "code": "Ue4_0_SalaRiunioni2",
+      "name": "Sala Riunioni 2",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 5
+    },
+    {
+      "id":178,
+      "code": "Ue4_0_SalaRiunioni3",
+      "name": "Sala Riunioni 3",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 5
+    },
+    {
+      "id":179,
+      "code": "Ue4_0_ServiziAmministrativiStudenti",
+      "name": "Servizi Amministrativi Studenti",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 5
+    },
+    {
+      "id":180,
+      "code": "Ue4_0_Portineria",
+      "name": "Portineria",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 5
+    },
+    {
+      "id":181,
+      "code": "Ue4_0_Bagno01",
+      "name": "Bagno",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 4
+    },
+    {
+      "id":182,
+      "code": "Ue4_0_BagnoHandicap01",
+      "name": "Bagno Disabili",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 4
+    },
+    {
+      "id":183,
+      "code": "Ue4_0_Kiosk",
+      "name": "Kiosk",
+      "descriptions": "",
+      "floorId": 7,
+      "legendId": 9
+    } ,
+    {
+      "id":184,
+      "code": "Outdoor_Kiosk",
+      "name": "Kiosk",
+      "descriptions": "",
+      "floorId": -1,
+      "legendId": 9
+    },
+    {
+      "id":185,
+      "code": "Ue4",
+      "name": "Edificio Ue4",
+      "descriptions": "",
+      "floorId": -1,
+      "legendId": 10
+    },
+    {
+      "id":186,
+      "code": "Ue5",
+      "name": "Edificio Ue5",
+      "descriptions": "",
+      "floorId": -1,
+      "legendId": 10
+    }
+
+]
+
+
