@@ -37,5 +37,7 @@ struct InformationSpaceView: View {
             }
         }
     }
+    
+    
 }
 

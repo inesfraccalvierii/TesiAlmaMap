@@ -53,7 +53,7 @@
     "name": "Bagno Disabili",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":15,
@@ -69,7 +69,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":18,
@@ -85,7 +85,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":33,
@@ -93,7 +93,7 @@
     "name": "Portineria",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 5
+    "legendId": 4
   },
   {
     "id":35,
@@ -125,7 +125,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":44,
@@ -165,7 +165,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 14,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":49,
@@ -181,7 +181,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":54,
@@ -197,7 +197,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":57,
@@ -213,7 +213,7 @@
     "name": "Bagno Disabili",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":70,
@@ -229,7 +229,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":72,
@@ -237,7 +237,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":73,
@@ -269,7 +269,7 @@
     "name": "Bagno Disabili",
     "descriptions": "",
     "floorId": 15,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":77,
@@ -293,7 +293,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 16,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":89,
@@ -341,7 +341,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 16,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":102,
@@ -365,7 +365,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 16,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":105,
@@ -373,7 +373,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 16,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":106,
@@ -405,7 +405,7 @@
     "name": "Bagno Disabili",
     "descriptions": "",
     "floorId": 16,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":111,
@@ -445,7 +445,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 17,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":117,
@@ -453,7 +453,7 @@
     "name": "Bagno",
     "descriptions": "",
     "floorId": 17,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":118,
@@ -485,7 +485,7 @@
     "name": "Bagno Disabili",
     "descriptions": "",
     "floorId": 17,
-    "legendId": 4
+    "legendId": 5
   },
   {
     "id":123,
@@ -517,7 +517,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 18,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":130,
@@ -525,7 +525,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 18,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":131,
@@ -557,7 +557,7 @@
       "name": "Bagno Disabili",
       "descriptions": "",
       "floorId": 18,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":135,
@@ -589,7 +589,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 19,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":142,
@@ -597,7 +597,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 19,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":143,
@@ -629,7 +629,7 @@
       "name": "Bagno Disabili",
       "descriptions": "",
       "floorId": 19,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":147,
@@ -661,7 +661,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 20,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":154,
@@ -669,7 +669,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 20,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":155,
@@ -701,7 +701,7 @@
       "name": "Bagno Disabili",
       "descriptions": "",
       "floorId": 20,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":161,
@@ -717,7 +717,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 21,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":163,
@@ -725,7 +725,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 21,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":164,
@@ -757,7 +757,7 @@
       "name": "Bagno Disabili",
       "descriptions": "",
       "floorId": 21,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":168,
@@ -789,7 +789,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 14,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":172,
@@ -797,7 +797,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 14,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":173,
@@ -829,7 +829,7 @@
       "name": "Sala Riunioni 1",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 5
+      "legendId": 4
     },
     {
       "id":177,
@@ -837,7 +837,7 @@
       "name": "Sala Riunioni 2",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 5
+      "legendId": 4
     },
     {
       "id":178,
@@ -845,7 +845,7 @@
       "name": "Sala Riunioni 3",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 5
+      "legendId": 4
     },
     {
       "id":179,
@@ -853,7 +853,7 @@
       "name": "Servizi Amministrativi Studenti",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 5
+      "legendId": 4
     },
     {
       "id":180,
@@ -861,7 +861,7 @@
       "name": "Portineria",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 5
+      "legendId": 4
     },
     {
       "id":181,
@@ -869,7 +869,7 @@
       "name": "Bagno",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":182,
@@ -877,7 +877,7 @@
       "name": "Bagno Disabili",
       "descriptions": "",
       "floorId": 7,
-      "legendId": 4
+      "legendId": 5
     },
     {
       "id":183,

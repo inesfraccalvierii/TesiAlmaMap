@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0F6AFD2AFE4EF400C2D6C7 /* ButtonFloorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F6AFC2AFE4EF400C2D6C7 /* ButtonFloorView.swift */; };
 		FA36BB7D2AAFC40A008EB528 /* spaces.json in Resources */ = {isa = PBXBuildFile; fileRef = FA36BB7C2AAFC40A008EB528 /* spaces.json */; };
 		FA36BB832AAFC66A008EB528 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36BB822AAFC66A008EB528 /* SpaceView.swift */; };
 		FA42057B2AE7AE28002347FE /* SpaceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42057A2AE7AE28002347FE /* SpaceRowView.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0F6AFC2AFE4EF400C2D6C7 /* ButtonFloorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFloorView.swift; sourceTree = "<group>"; };
 		FA36BB7C2AAFC40A008EB528 /* spaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spaces.json; sourceTree = "<group>"; };
 		FA36BB822AAFC66A008EB528 /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
 		FA42057A2AE7AE28002347FE /* SpaceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceRowView.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				FA42057A2AE7AE28002347FE /* SpaceRowView.swift */,
 				FA42058E2AEFC622002347FE /* InformationSpaceView.swift */,
 				FA64732B2AFBCB6F00D0EEFA /* InformationSpaceRowView.swift */,
+				FA0F6AFC2AFE4EF400C2D6C7 /* ButtonFloorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				FA42058B2AEB11AC002347FE /* SensorEntity.swift in Sources */,
 				FAE79DD32A03D7D2001055D4 /* AlmaMap.xcdatamodeld in Sources */,
 				FA6473352AFCF3C200D0EEFA /* Simulator.swift in Sources */,
+				FA0F6AFD2AFE4EF400C2D6C7 /* ButtonFloorView.swift in Sources */,
 				FA36BB832AAFC66A008EB528 /* SpaceView.swift in Sources */,
 				FA42057B2AE7AE28002347FE /* SpaceRowView.swift in Sources */,
 				FA42057F2AE7B02D002347FE /* Spaces.swift in Sources */,
