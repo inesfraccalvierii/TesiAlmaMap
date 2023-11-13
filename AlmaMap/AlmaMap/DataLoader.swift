@@ -12,7 +12,7 @@ import CoreData
 class DataLoader: ObservableObject {
 
     
-    @Published var model = Modeldata<Legend>(fileName: "legend.json")
+    @Published var model = Modeldata<Legend>(fileName: "legend")
     
     var legend: [Legend] {
         model.list
@@ -21,7 +21,7 @@ class DataLoader: ObservableObject {
     //var isLoading = true
    
 
-    @Published var model2 = Modeldata<Building>(fileName: "buildings.json")
+    @Published var model2 = Modeldata<Building>(fileName: "buildings")
     
     var building: [Building] {
         model2.list
@@ -30,7 +30,7 @@ class DataLoader: ObservableObject {
    // var isLoading2 = true
     
     
-    @Published var model3 = Modeldata<Floor>(fileName: "floors.json")
+    @Published var model3 = Modeldata<Floor>(fileName: "floors")
     
     var floor: [Floor] {
         model3.list
@@ -38,7 +38,7 @@ class DataLoader: ObservableObject {
     
    // var isLoading3 = true
     
-    @Published var model4 = Modeldata<Spaces>(fileName: "spaces.json")
+    @Published var model4 = Modeldata<Spaces>(fileName: "spaces")
     
     var space: [Spaces] {
         model4.list
@@ -46,7 +46,7 @@ class DataLoader: ObservableObject {
     
    // var isLoading4 = true
     
-    @Published var model5 = Modeldata<SensorType>(fileName: "sensor-types.json")
+    @Published var model5 = Modeldata<SensorType>(fileName: "sensor-types")
     
     var sensorType: [SensorType] {
         model5.list
@@ -55,7 +55,7 @@ class DataLoader: ObservableObject {
    // var isLoading5 = true
     
     
-    @Published var model6 = Modeldata<Sensor>(fileName: "sensors.json")
+    @Published var model6 = Modeldata<Sensor>(fileName: "sensors")
     
     var sensor: [Sensor] {
         model6.list
@@ -63,7 +63,7 @@ class DataLoader: ObservableObject {
     
    // var isLoading6 = true
     
-    @Published var model7 = Modeldata<Unit>(fileName: "units.json")
+    @Published var model7 = Modeldata<Unit>(fileName: "units")
     
     var unit: [Unit] {
         model7.list

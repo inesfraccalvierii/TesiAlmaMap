@@ -1,0 +1,6 @@
+[
+  { "id": 1, "code": "DEGREES_CELSIUS", "symbol": "°C" },
+  { "id": 2, "code": "PERCENT", "symbol": "%" },
+  { "id": 3, "code": "DECIBEL", "symbol": "dB(A)" },
+  { "id": 4, "code": "MG_PER_M3", "symbol": "µg/m³" }
+]

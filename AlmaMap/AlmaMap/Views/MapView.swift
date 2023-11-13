@@ -49,6 +49,8 @@ struct MapView: View {
     @State var isHidden: Bool = true
     @State var isHidden3: Bool = true
     @State var isHidden2: Bool = false
+    @State var show: Bool = false
+
     
     // Limiti dello zoom
     private let maxZoomScale: CGFloat = 3.0
@@ -76,7 +78,7 @@ struct MapView: View {
         spaces.forEach { space in
             if let part = view.getNode(byId: space.code) {
                 part.onTapGesture {
-                    part.opacity = 0.2
+                    show = true
                 }
             }
             
@@ -90,8 +92,6 @@ struct MapView: View {
     var body: some View {
         
         ZStack{
-            
-            
             setupView(SVGView(contentsOf: Bundle.main.url(forResource: active, withExtension: "svg")!))
                 .contentShape(Rectangle()) // Fa si che tutto il rettangolo ascolto la gesture
                 .scaleEffect(zoomScale * pinchScale)
@@ -135,13 +135,11 @@ struct MapView: View {
                         
                     }
                 }.isHidden(hidden: isHidden3, remove: true).padding()
-                
-                
-                
               
                 }
                 
             }
+
             
         }
         
@@ -178,118 +176,3 @@ extension View {
 
 
 
-
-/*
- HStack{
-     ForEach(floors) { floor in
-         Button(floor.number){
-             zoomScale = 1.0
-             
-             isHidden = false
-             isHidden2 = true
-             active = "Ue\(buildingShow)_\()"
-         }.padding(10).buttonBorderShape(.capsule).background(Color(red: 203/255, green: 203/255, blue: 203/255)).cornerRadius(.infinity)
-     }.isHidden(hidden: isHidden2, remove: true)
- }
- 
- 
- import Foundation
- import SwiftUI
- import SVGView
-
- struct MapView: View {
-     
-     @ObservedObject var viewModel: DataLoader
-     
-     //    @State var scale = 1.0
-     @State var lastscale = 1.0
-     
-     @GestureState private var scale: CGFloat = 0.0
-     @State private var endScale: CGFloat = 1.0
-     
-     @FetchRequest(sortDescriptors:  [], predicate: nil, animation: .default)
-     private var BuildingsCoreData: FetchedResults<BuildingEntity>
-     
-     
-     var buildings: [Building] {
-         var list = viewModel.building
-         for building in BuildingsCoreData {
-             list.append(building.convertToUser())
-         }
-         return list
-     }
-     
-     @FetchRequest(sortDescriptors:  [], predicate: nil, animation: .default)
-     private var FloorsCoreData: FetchedResults<FloorEntity>
-     
-     var floors: [Floor] {
-         var list = viewModel.floor
-         for floor in FloorsCoreData {
-             list.append(floor.convertToUser())
-             
-         }
-         return list
-     }
-     
-     @State private var zoomScale: CGFloat = 1.0
-     @GestureState private var pinchScale: CGFloat = 1.0
-     
-     @State  var active: String = "campus"
-     @State  var buildingShow: Int32 = 0
-     @State var isHidden: Bool = true
-     @State var isHidden2: Bool = false
-     
-     
-     var body: some View {
-         ZStack{
-             
-             
-             
-             
-             SVGView(contentsOf: Bundle.main.url(forResource: active, withExtension: "svg")!).scaledToFit().scaleEffect(zoomScale * pinchScale)
-                 .gesture(
-                     MagnificationGesture()
-                         .updating($pinchScale, body:{ value, state, transiction in
-                             state = value
-                         })
-                         .onEnded( { value in
-                             zoomScale += value
-                         })
-                 )
-             
-             VStack{
-                 Spacer()
-                 HStack{
-                     ForEach(buildings) { building in
-                         Button(building.code){
-                             zoomScale = 1.0
-                             
-                             isHidden = false
-                             isHidden2 = true
-                             buildingShow = building.id
-                             active = "Ue\(buildingShow)_1"
-                         }.padding(10).buttonBorderShape(.capsule).background(Color(red: 203/255, green: 203/255, blue: 203/255)).cornerRadius(.infinity)
-                     }.isHidden(hidden: isHidden2, remove: true)
-                 }
-                 HStack{
-                     Spacer()
-                         Button("back"){
-                             isHidden2 = false
-                             isHidden = true
-                             active = "campus"
-                         }.padding(10).buttonBorderShape(.capsule).background(Color(red: 203/255, green: 203/255, blue: 203/255)).cornerRadius(.infinity)
-                     
-                 }.isHidden(hidden: isHidden, remove: true)
-                 
-             }
-             
-             
-             
-         }
-         
-         
-     }
-     
-    
- }
-     )*/
