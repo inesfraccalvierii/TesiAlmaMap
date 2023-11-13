@@ -24,7 +24,7 @@ struct MapView: View {
     private var spaceCoreData: FetchedResults<SpacesEntity>
     
     
-   
+    
     
     
     
@@ -50,7 +50,7 @@ struct MapView: View {
     @State var isHidden3: Bool = true
     @State var isHidden2: Bool = false
     @State var show: Bool = false
-
+    
     
     // Limiti dello zoom
     private let maxZoomScale: CGFloat = 3.0
@@ -76,7 +76,9 @@ struct MapView: View {
     // Qui inserisci ogni gestione delle stanze supportate
     private func setupView(_ view: SVGView) -> SVGView {
         spaces.forEach { space in
+            
             if let part = view.getNode(byId: space.code) {
+                //part.toSwiftUI().background(Color(.red))
                 part.onTapGesture {
                     show = true
                 }
@@ -84,67 +86,70 @@ struct MapView: View {
             
         }
         return view
-       
+        
     }
     
     // MARK: - Body
     
     var body: some View {
         
-        ZStack{
-            setupView(SVGView(contentsOf: Bundle.main.url(forResource: active, withExtension: "svg")!))
-                .contentShape(Rectangle()) // Fa si che tutto il rettangolo ascolto la gesture
-                .scaleEffect(zoomScale * pinchScale)
-                .gesture(magnificationGesture)
+        VStack{
+            Text("**AlmaMap**").font(.title).padding(.bottom, 20).foregroundColor(Color.white).frame(maxWidth: .infinity).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81))
             
-            VStack{
-                HStack{
+            ZStack{
+                setupView(SVGView(contentsOf: Bundle.main.url(forResource: active, withExtension: "svg")!))
+                    .contentShape(Rectangle()) // Fa si che tutto il rettangolo ascolto la gesture
+                    .scaleEffect(zoomScale * pinchScale)
+                    .gesture(magnificationGesture)
+                
+                VStack{
+                    HStack{
                         Button("back"){
                             isHidden2 = false
                             isHidden = true
                             isHidden3 = true
                             active = "campus"
                         }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
+                        Spacer()
+                    }.isHidden(hidden: isHidden, remove: true).padding()
+                    
                     Spacer()
-                }.isHidden(hidden: isHidden, remove: true).padding()
-                
-                Spacer()
-                HStack{
-                    ForEach(buildings) { building in
-                        Button(building.code){
-                            zoomScale = 1.0
-                            
-                            isHidden = false
-                            isHidden3 = false
-                            isHidden2 = true
-                            buildingShow = building.id
-                            active = "Ue\(buildingShow)_0"
-                        }.padding(20).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
-                    }.isHidden(hidden: isHidden2, remove: true).padding(10)
-                }
-                HStack{
-                    ForEach(floors){ floor in
-                        if(floor.buildingId == buildingShow){
-                            Button(String(floor.number)){
+                    HStack{
+                        ForEach(buildings) { building in
+                            Button(building.code){
                                 zoomScale = 1.0
+                                
                                 isHidden = false
+                                isHidden3 = false
                                 isHidden2 = true
-                                active = "Ue\(buildingShow)_\(floor.number)"
-                            }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
-                        }
-                        
+                                buildingShow = building.id
+                                active = "Ue\(buildingShow)_0"
+                            }.padding(20).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
+                        }.isHidden(hidden: isHidden2, remove: true).padding(10)
                     }
-                }.isHidden(hidden: isHidden3, remove: true).padding()
-              
+                    HStack{
+                        ForEach(floors){ floor in
+                            if(floor.buildingId == buildingShow){
+                                Button(String(floor.number)){
+                                    zoomScale = 1.0
+                                    isHidden = false
+                                    isHidden2 = true
+                                    active = "Ue\(buildingShow)_\(floor.number)"
+                                }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
+                            }
+                            
+                        }
+                    }.isHidden(hidden: isHidden3, remove: true).padding()
+                    
                 }
                 
             }
-
+            
             
         }
         
     }
-
+}
 
 
 
