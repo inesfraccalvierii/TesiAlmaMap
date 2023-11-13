@@ -50,6 +50,7 @@ struct MapView: View {
     @State var isHidden3: Bool = true
     @State var isHidden2: Bool = false
     @State var show: Bool = false
+    @State var floorSelected: Int32 = 0
     
     
     // Limiti dello zoom
@@ -75,20 +76,42 @@ struct MapView: View {
     // Funzione per configurare SVGView
     // Qui inserisci ogni gestione delle stanze supportate
     private func setupView(_ view: SVGView) -> SVGView {
-        spaces.forEach { space in
-            
-            if let part = view.getNode(byId: space.code) {
-                //part.toSwiftUI().background(Color(.red))
+        spaces.forEach{ space in
+            if let part = view.getNode(byId: getType(space: space.legendId) + space.code) {
+                
                 part.onTapGesture {
-                    show = true
+                   
+                    part.opacity = 0.2
                 }
             }
             
         }
-        return view
+            return view
         
     }
     
+    private func getType(space: Int32) -> String{
+        switch space {
+        case 1:
+            return "Aule_"
+        case 2:
+            return "Laboratori_"
+        case 3:
+            return "Laboratori_"
+        case 4:
+            return "Servizi_"
+        case 5:
+            return "Bagni_"
+        case 6:
+            return "Scale_"
+        case 7:
+            return "Ascensori_"
+        case 8:
+            return "Uscite_"
+        default:
+            return ""
+        }
+    }
     // MARK: - Body
     
     var body: some View {
@@ -105,11 +128,13 @@ struct MapView: View {
                 VStack{
                     HStack{
                         Button("back"){
+                            floorSelected = 0
                             isHidden2 = false
                             isHidden = true
                             isHidden3 = true
                             active = "campus"
                         }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
+                        Text("**Ue\(buildingShow)**").font(.title2).frame(maxWidth: 250, alignment: .center)
                         Spacer()
                     }.isHidden(hidden: isHidden, remove: true).padding()
                     
@@ -118,7 +143,6 @@ struct MapView: View {
                         ForEach(buildings) { building in
                             Button(building.code){
                                 zoomScale = 1.0
-                                
                                 isHidden = false
                                 isHidden3 = false
                                 isHidden2 = true
@@ -131,11 +155,12 @@ struct MapView: View {
                         ForEach(floors){ floor in
                             if(floor.buildingId == buildingShow){
                                 Button(String(floor.number)){
+                                    floorSelected = floor.number
                                     zoomScale = 1.0
                                     isHidden = false
                                     isHidden2 = true
                                     active = "Ue\(buildingShow)_\(floor.number)"
-                                }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(Color(hue: 0.0222, saturation: 1, brightness: 0.81)).cornerRadius(.infinity)
+                                }.padding(10).buttonBorderShape(.capsule).foregroundColor(Color.white).background(AlmaMap.floorSelected(floorselected: floorSelected, floor: floor.number)).cornerRadius(.infinity)
                             }
                             
                         }
@@ -151,6 +176,14 @@ struct MapView: View {
     }
 }
 
+func floorSelected(floorselected: Int32, floor: Int32) -> Color{
+    if(floorselected == floor){
+        return Color.orange
+    }
+    else{
+        return Color(hue: 0.0222, saturation: 1, brightness: 0.81)
+    }
+}
 
 
 struct IsHidden: ViewModifier {
