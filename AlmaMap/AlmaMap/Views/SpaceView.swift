@@ -44,7 +44,7 @@ struct SpaceView: View {
 
     var body: some View {
             List(spaces) { space in
-                if(space.floorId == floor.id && (space.legendId != 6 || space.legendId != 7 || space.legendId != 8)){
+                if((space.legendId == 1 || space.legendId == 2 || space.legendId == 3) && space.floorId == floor.id ){
                         NavigationLink(destination: InformationSpaceView(space: space, viewModel: viewModel)){
                             SpaceRowView(space: space, viewModel: viewModel)
                         }
@@ -56,5 +56,6 @@ struct SpaceView: View {
     }
     
 }
+
 
 

@@ -51,6 +51,7 @@ struct MapView: View {
     @State var isHidden2: Bool = false
     @State var show: Bool = false
     @State var floorSelected: Int32 = 0
+    @State var spaceSelect: Spaces 
     
     
     // Limiti dello zoom
@@ -73,15 +74,16 @@ struct MapView: View {
             }
     }
     
+
     // Funzione per configurare SVGView
     // Qui inserisci ogni gestione delle stanze supportate
     private func setupView(_ view: SVGView) -> SVGView {
         spaces.forEach{ space in
-            if let part = view.getNode(byId: getType(space: space.legendId) + space.code) {
+            if let part = view.getNode(byId: getType(space: space.legendId) + space.code){
                 
                 part.onTapGesture {
-                   
-                    part.opacity = 0.2
+                    spaceSelect = space
+                    show = true
                 }
             }
             
@@ -114,6 +116,7 @@ struct MapView: View {
     }
     // MARK: - Body
     
+   
     var body: some View {
         
         VStack{
@@ -166,6 +169,8 @@ struct MapView: View {
                         }
                     }.isHidden(hidden: isHidden3, remove: true).padding()
                     
+                } .sheet(isPresented: $show) {
+                    InformationSpaceView(space: spaceSelect, viewModel: viewModel).padding(.top)
                 }
                 
             }

@@ -21,11 +21,17 @@ struct HomePageView: View {
         UITabBar.appearance().unselectedItemTintColor = UIColor(hue: 0.0222, saturation: 1, brightness: 0.81, alpha: 1.0)
         }
   
+    @FetchRequest(sortDescriptors: [], predicate: nil, animation: .default)
+    private var spaceCoreData: FetchedResults<SpacesEntity>
+    private var spaces: [Spaces] {
+        viewModel.space + spaceCoreData.map { $0.convertToUser() }
+        
+    }
 
     var body: some View {
       
             TabView{
-                MapView(viewModel: viewModel).tabItem(){
+                MapView(viewModel: viewModel, spaceSelect: spaces.first!).tabItem(){
                     Image(systemName: "globe.europe.africa")
                     Text("Mappa")
                 }
