@@ -12,6 +12,7 @@ import SVGView
 struct MapView: View {
     
     @ObservedObject var viewModel: DataLoader
+    @Environment(\.managedObjectContext) private var viewContext
     
     // FetchRequests per Buildings e Floors
     @FetchRequest(sortDescriptors: [], predicate: nil, animation: .default)
@@ -51,7 +52,7 @@ struct MapView: View {
     @State var isHidden2: Bool = false
     @State var show: Bool = false
     @State var floorSelected: Int32 = 0
-    @State var spaceSelect: Spaces 
+    @State var spaceSelect: Spaces
     
     
     // Limiti dello zoom
@@ -74,49 +75,52 @@ struct MapView: View {
             }
     }
     
-
+    
     // Funzione per configurare SVGView
     // Qui inserisci ogni gestione delle stanze supportate
     private func setupView(_ view: SVGView) -> SVGView {
         spaces.forEach{ space in
-            if let part = view.getNode(byId: getType(space: space.legendId) + space.code){
-                
+            if let part = view.getNode(byId: getId(space: space.legendId, code: space.code)) as? SVGShape {
+                part.fill = getLegendColor(type: space.legendId)
                 part.onTapGesture {
                     spaceSelect = space
-                    show = true
+                    if(space.legendId != 6 && space.legendId != 7 && space.legendId != 8){
+                        show = true
+                    }
                 }
             }
-            
         }
-            return view
+        return view
         
     }
     
-    private func getType(space: Int32) -> String{
+    
+    
+    private func getId(space: Int32, code: String) -> String{
         switch space {
         case 1:
-            return "Aule_"
+            return "Aule_\(code)"
         case 2:
-            return "Laboratori_"
+            return code
         case 3:
-            return "Laboratori_"
+            return "Studi_\(code)"
         case 4:
-            return "Servizi_"
+            return "Servizi_\(code)"
         case 5:
-            return "Bagni_"
+            return "Bagni_\(code)"
         case 6:
-            return "Scale_"
+            return "Scale_\(code)"
         case 7:
-            return "Ascensori_"
+            return "Ascensori_\(code)"
         case 8:
-            return "Uscite_"
+            return "Uscite_\(code)"
         default:
             return ""
         }
     }
     // MARK: - Body
     
-   
+    
     var body: some View {
         
         VStack{
@@ -145,6 +149,7 @@ struct MapView: View {
                     HStack{
                         ForEach(buildings) { building in
                             Button(building.code){
+                                
                                 zoomScale = 1.0
                                 isHidden = false
                                 isHidden3 = false
@@ -215,6 +220,40 @@ extension View {
                 hidden: hidden,
                 remove: remove))
     }
+    
+    func getLegendColor(type: Int32) -> SVGColor{
+        
+        switch type{
+        case 5:
+            return SVGColor.init(r: 77, g: 208, b: 225)
+            
+        case 1:
+            return SVGColor.init(r: 239, g: 83, b: 80)
+            
+        case 2:
+            return SVGColor.init(r: 255, g: 183, b:77)
+            
+        case 3:
+            return SVGColor.init(r: 33, g: 150, b: 243)
+            
+        case 7:
+            return SVGColor.init(r: 123, g: 222, b: 11)
+            
+        case 6:
+            return SVGColor.init(r: 255, g: 252, b: 0)
+            
+        case 4:
+            return SVGColor.init(r: 186, g: 104, b: 200)
+            
+        case 8:
+            return SVGColor.init(r: 26, g: 175, b: 80)
+            
+            
+        default:
+            return SVGColor.init(r: 181, g: 84, b: 68)
+        }
+    }
+    
 }
 
 

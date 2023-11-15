@@ -1,10 +1,3 @@
-//
-//  Persistence.swift
-//  AlmaMap
-//
-//  Created by Ines Fraccalvieri on 04/05/23.
-//
-
 import CoreData
 
 struct PersistenceController {

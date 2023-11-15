@@ -14,7 +14,7 @@ struct InformationSpaceRowView: View {
     var space: Spaces
     var sensor: Sensor
     @ObservedObject var viewModel: DataLoader
-    
+    @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(sortDescriptors:  [], predicate: nil, animation: .default)
     private var SensorTypeCoreData: FetchedResults<SensorTypeEntity>
@@ -35,9 +35,9 @@ struct InformationSpaceRowView: View {
             Spacer()
             VStack{
                 let value = Simulator().simulateSensorValue(type: sensor.typeCode)
-                let _ = addValue(sensor: sensor.typeCode, value: value)
+                //let _ = addValue(sensor: sensor.id, sensorname: sensor.typeCode, value: value)
                 if( sensor.typeCode == "COMFORT"){
-                    Text(String(comfort()) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(Color.white).cornerRadius(10)
+                    Text(String(viewModel.comfort()) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(Color.white).cornerRadius(10)
                 } else {
                     Text(String(value) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(viewModel.getColor(type: sensor.typeCode, value: value)).cornerRadius(10)
                 }
@@ -46,8 +46,9 @@ struct InformationSpaceRowView: View {
         }
     }
     
-    func addValue(sensor: String, value:Int ){
-        values.updateValue(value, forKey: sensor)
+  /*  func addValue(sensor: Int32, sensorname: String, value:Int ){
+        //viewModel.newValue(sensor: sensor, value: value, viewContext: viewContext)
+        values[sensorname] = value
     }
     
     func comfort() -> Int{
@@ -65,7 +66,6 @@ struct InformationSpaceRowView: View {
         }
        
       
-    }
-    
+    }*/
 }
 
