@@ -299,6 +299,48 @@ class DataLoader: ObservableObject {
         return buildingList
     }
     
+    func getLastValue(idSensor: Int32, viewContext: NSManagedObjectContext) -> Int32 {
+        
+        let request = NSFetchRequest<SensorValueEntity>(entityName: "SensorValueEntity")
+        request.predicate = NSPredicate(format: "idSensor", idSensor)
+
+        do {
+            let resultUser = try viewContext.fetch(request)
+            
+            return (resultUser.first?.convertToUser().value)!
+           
+        } catch let fetchError {
+            print("Failed to fetch: \(fetchError)")
+        }
+
+        return 0
+    }
+    
+    
+    
+    
+    /*  func addValue(sensor: Int32, sensorname: String, value:Int ){
+          //
+          values[sensorname] = value
+      }
+      
+      func comfort() -> Int{
+          print(values.count)
+          if(values.count == 8){
+              let thermalIndex = Double(values["TEMPERATURE"]!) * 0.6 + Double(values["HUMIDITY"]!) * 0.4
+              let soundIndex = Double(values["SOUND"]!)
+              let airQualityIndex = max(Double(values["OZONE"]!), Double(values["PM2.5"]!), Double(values["CARBON_MONOXIDE"]!), Double(values["NITROGEN_DIOXIDE"]!), Double(values["PM10"]!))
+              let comfortIndex = thermalIndex * 0.4 + soundIndex * 0.3 + airQualityIndex * 0.3
+              let comfortPercentage = 100 - (comfortIndex * 100 / 2)
+              values.removeAll()
+              return Int(comfortPercentage)
+          } else {
+              return 50
+          }
+         
+        
+      }*/
+    
     
     func getUnitCode(type: String) -> String{
         var unit2: String = ""

@@ -96,6 +96,7 @@ struct MapView: View {
     
     
     
+    
     private func getId(space: Int32, code: String) -> String{
         switch space {
         case 1:
