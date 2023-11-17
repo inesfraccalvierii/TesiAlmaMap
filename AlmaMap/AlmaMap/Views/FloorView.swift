@@ -31,7 +31,7 @@ struct FloorView: View {
     }
 
     var body: some View {
-            List(floors) { floor in
+        List(viewModel.getFloors(building: building.id, viewContext: viewContext)) { floor in
                     if(floor.buildingId == building.id){
                         NavigationLink(destination: SpaceView(viewModel: viewModel, floor: floor)){
                             FloorRowView(floor: floor, viewModel: viewModel)

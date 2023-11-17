@@ -42,7 +42,7 @@ struct BuildingsView: View {
 
     var body: some View {
         NavigationView(){
-            List(buildings){ building in
+            List(viewModel.getBuildings(viewContext: viewContext)){ building in
                 NavigationLink(destination: FloorView(viewModel: viewModel, building: building)){
                     Text(building.name)
                 }

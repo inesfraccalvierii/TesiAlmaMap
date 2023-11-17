@@ -147,7 +147,7 @@ struct MapView: View {
                     
                     Spacer()
                     HStack{
-                        ForEach(buildings) { building in
+                        ForEach(viewModel.getBuildings(viewContext: viewContext)) { building in
                             Button(building.code){
                                 
                                 zoomScale = 1.0
@@ -160,7 +160,7 @@ struct MapView: View {
                         }.isHidden(hidden: isHidden2, remove: true).padding(10)
                     }
                     HStack{
-                        ForEach(floors){ floor in
+                        ForEach(viewModel.getFloors(building: buildingShow, viewContext: viewContext)){ floor in
                             if(floor.buildingId == buildingShow){
                                 Button(String(floor.number)){
                                     floorSelected = floor.number

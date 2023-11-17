@@ -35,7 +35,7 @@ struct InformationSpaceRowView: View {
             Spacer()
             VStack{
                 let value = Simulator().simulateSensorValue(type: sensor.typeCode)
-                //let _ = addValue(sensor: sensor.id, sensorname: sensor.typeCode, value: value)
+                let _ = viewModel.newValue(sensor: sensor.id, value: value, viewContext: viewContext)
                 if( sensor.typeCode == "COMFORT"){
                     Text(String(viewModel.comfort()) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(Color.white).cornerRadius(10)
                 } else {
@@ -47,7 +47,7 @@ struct InformationSpaceRowView: View {
     }
     
   /*  func addValue(sensor: Int32, sensorname: String, value:Int ){
-        //viewModel.newValue(sensor: sensor, value: value, viewContext: viewContext)
+        //
         values[sensorname] = value
     }
     

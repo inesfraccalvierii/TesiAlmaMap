@@ -11,6 +11,7 @@ import CoreData
 
 class DataLoader: ObservableObject {
     
+    var lastIdValues = 0
     @State var values = [String:Int]()
     
     @Published var model = Modeldata<Legend>(fileName: "legend")
@@ -183,17 +184,56 @@ class DataLoader: ObservableObject {
         }
     }
     
+    func addFloors(viewContext: NSManagedObjectContext){
+        for fl in floor {
+            let newItem = FloorEntity(context: viewContext)
+            newItem.id = fl.id
+            newItem.svg = fl.svg
+            newItem.buildingId = fl.buildingId
+            newItem.number = fl.number
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
+    }
+
+    func addSpaces(viewContext: NSManagedObjectContext){
+        for sp in space {
+            let newItem = SpacesEntity(context: viewContext)
+            newItem.id = sp.id
+            newItem.code = sp.code
+            newItem.descriptions = sp.descriptions
+            newItem.floorId = sp.floorId
+            newItem.legendId = sp.legendId
+            newItem.name = sp.name
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
+    }
+
     
     
     func newValue(sensor: Int32, value: Int, viewContext: NSManagedObjectContext){
         
         withAnimation {
             let newItem = SensorValueEntity(context: viewContext)
-            newItem.id = Int32(lastID + 10)
+            newItem.id = Int32(lastIdValues + 1)
             newItem.idSensor = sensor
             newItem.value = Int32(value)
-            
+            lastIdValues += 1
             do {
+                print(newItem)
                 try viewContext.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
