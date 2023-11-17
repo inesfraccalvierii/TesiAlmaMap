@@ -23,3 +23,11 @@ Per avviare il simulatore dell'applicazione AlmaMap, necessitiamo di aver instal
 - Aprire la cartella Server su Visual Studio Code o su Terminale e avviare il server con "node index.js", se questa operazione non viene eseguita l'applicazione prenderà tutti i dati che ha in locale
 
 - Eseguire il file AlmaMap.xcodeproj per eseguire il progetto. Si può passare da xcode e far partire il run del simulatore in locale sul proprio computer, oppure collegado il proprio telefono con sistema operativo iOS, scaricarsi l'applicazione direttamete sul proprio portatile.
+
+
+#### Immagini SVG
+La gestione delle immagini SVG funziona in gran parte, è stato implementato lo zoom dell'immagine e la pssobilità di cliccare su uno spazio per visualizzare delle informazioni.
+Unico problema, la libreria SVGView non geztisce onTapGesture sui polygon, e non ho trovato altre librerie che lo facciano. Non ci sono problemi sui rect e path. Infatti si potrebbero riscontrare problemi su determinati spazi.
+
+#### Richieste API al server di AlmaMap per la richiesta dei valori raccolti dai sensori
+Le richieste dei valore raccolti dai sensori, in questa versione di AlmaMap mobile, è simulata. Non è stata implementata in modo efficente il collegamento per la richiesta di quelle informazioni sulla versione dei chioschi. Tutte gli altri dati che venogno visualizzati utilizzano richieste API su un server in cui sono prenseti i dati di Building, Floor, Space e così via.
