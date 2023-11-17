@@ -37,7 +37,7 @@ struct InformationSpaceRowView: View {
                 let value = Simulator().simulateSensorValue(type: sensor.typeCode)
                 let _ = viewModel.newValue(sensor: sensor.id, value: value, viewContext: viewContext)
                 if( sensor.typeCode == "COMFORT"){
-                    Text(String(viewModel.comfort()) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(Color.white).cornerRadius(10)
+                    Text(String(viewModel.getComfort(idSpace: space.id, viewContext: viewContext)) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(Color.white).cornerRadius(10)
                 } else {
                     Text(String(value) + " " + viewModel.getUnitCode(type: sensor.typeCode)).padding(20).background(viewModel.getColor(type: sensor.typeCode, value: value)).cornerRadius(10)
                 }
